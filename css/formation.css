@@ -87,3 +87,8 @@ hr{
 h2{
     font-weight: bold;
 }
+.icons{
+    border-radius: 20px;
+    background-color: white;
+    
+}
