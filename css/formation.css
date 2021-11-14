@@ -23,7 +23,7 @@ nav ul{
 }
 .title-age{
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -34,9 +34,9 @@ nav ul{
     margin-top:70px;
     width: 20px; 
     height: 50vh; 
-    background-color: rgb(214, 19, 19); 
+    background-color:#CE0033; 
     position: absolute;
-}
+} 
 .parparcours{
     margin-top: 50px;
 }
@@ -45,4 +45,45 @@ nav ul{
 }
 .parpartenariat{
     margin-top: 50px;
+}
+.img-card{
+    height: 280px;
+}
+.card-title{
+    color: #CE0033;
+}
+.title{
+    color: #CE0033;
+}
+.affiche{
+    text-decoration: underline;
+}
+.triangle{
+    height: auto;
+    position: absolute;
+    width: 50px;
+    transform: translateX(350%);
+    top: 51%;
+    
+}
+.formation{
+    color: #CE0033;
+
+}
+.card{
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+}
+.search{
+    margin-left: 35%; 
+    margin-top: 30px; 
+    width: 400px; 
+    height: 40px;
+    box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+}
+hr{
+    color: #CE0033;
+    margin-top: 2px;
+}
+h2{
+    font-weight: bold;
 }
