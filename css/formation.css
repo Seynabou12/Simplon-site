@@ -1,8 +1,8 @@
-/* la barre rouge */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Public+Sans:wght@300&display=swap');
 *{
-    font-family: 'nunito sans sans serif';
+    font-family: 'nunito sans';
 }
-
+/* Partie Header */
 nav{
     width: 100%;
     margin: 0 auto;
@@ -16,26 +16,28 @@ nav ul{
     margin-left: 20px;
     text-align: center;
 } 
+/* Partie Banniére */
 #imgBan{
     filter: saturate(0);
     width: 100%;
-    height: 800Px;
+    height: 800px;
+    background-image: url('../images/imagbanniere.jpg');
 }
 .title-age{
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-
 }
 .bar{
     margin-top:70px;
-    width: 30px; 
+    width: 20px; 
     height: 70vh; 
     background-color:#CE0033; 
     position: absolute;
+    height: 800px;
 } 
 .parparcours{
     margin-top: 50px;
@@ -49,6 +51,7 @@ nav ul{
 .img-card{
     height: 280px;
 }
+
 .card-title{
     color: #CE0033;
 }
@@ -63,7 +66,7 @@ nav ul{
     position: absolute;
     width: 50px;
     transform: translateX(350%);
-    top: 51%;
+    top: 21%;
     
 }
 .formation{
@@ -72,6 +75,7 @@ nav ul{
 }
 .card{
     box-shadow: 0px 0px 0.25rem rgba(0, 0, 0, 0.25);
+
 }
 .search{
     margin-left: 35%; 
@@ -87,13 +91,16 @@ hr{
 h2{
     font-weight: bold;
 }
+
 .icons{
     border-radius: 20px;
     background-color: white;
-    height: 30px;
-    margin-left: -30px;
+    height: 40px;
+    margin-left: -10px;
     position: absolute;
     border: 1px solid #CE0033;
+    position: relative;
+    top: -4px;
     
 }
 .icon{
@@ -102,16 +109,17 @@ h2{
     border: white;
     border: 1px solid white;
     position: absolute;
-    margin-left: -30px;
-    height: 30px;
+    margin-left: -10px;
+    height: 40px;
+    position: relative;
+    top: -4px;
 }
+/* partie par parcours */
 
 h6{
     font-weight: bold;
 }
-.image{
-    background-image: url(../images/footer.png);
-}
+
 .barre{
     width: 100px;
 }
@@ -120,9 +128,10 @@ h6{
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 60px;
+    top: 180px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-weight: bold;
 }
 
 .initiation{
@@ -130,54 +139,61 @@ h6{
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 230px;
+    top: 280px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-weight: bold;
 }
 .metier{
     color: #fff;
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 400px;
+    top: 380px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-weight: bold;
 }
+/* Partie par public */
 .femmes{
     color: #fff;
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 20px;
+    top: 140px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-weight: bold;
 }
 .kids{
     color: #fff;
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 150px;
+    top: 300px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-weight: bold;
 }
 .psh{
     color: #fff;
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 280px;
+    top: 460px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-weight: bold;
 }
 .refugies{
     color: #fff;
     background-color: #CE0033 ;
     border-color: #CE0033 ;
     position: absolute;
-    top: 410px;
+    top: 640px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    font-weight: bold;
     
 }
 .d-flex{
@@ -185,9 +201,52 @@ h6{
 }
 .rectangle span{
     position: relative;
-    left: 50px;
+    left: 25px;
+    text-align: center;
 }
 .rectangle h5{
     width: 210px;
-    height: 40px;
+    height: 50px;
 }
+/* Partie footer */
+.image{
+    background-image: url(../images/footer.png);
+    background-size: cover;
+}
+.logowhite{
+    width: 200px;
+}
+.triangle{
+    border-left: 25px transparent solid;
+    border-right: 25px transparent solid;
+    border-top: 20px #CE0033 solid;
+    width: 0px;height: 0;
+}
+
+@media screen and (max-width: 768px){
+    .triangle{
+        border-left: 25px transparent solid;
+        border-right: 25px transparent solid;
+        border-top: 20px #CE0033 solid;
+        width: 0px;height: 0;
+        transform: translateX(450%);
+    }
+} 
+@media screen and (max-width: 1024px){
+    .triangle{
+        border-left: 25px transparent solid;
+        border-right: 25px transparent solid;
+        border-top: 20px #CE0033 solid;
+        width: 0px;height: 0;
+        transform: translateX(450%);
+    }
+} 
+@media screen and (max-width: 1080px){
+    .triangle{
+        border-left: 25px transparent solid;
+        border-right: 25px transparent solid;
+        border-top: 20px #CE0033 solid;
+        width: 0px;height: 0;
+        transform: translate(290%, 60%);
+    }
+} 
